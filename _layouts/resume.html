@@ -27,7 +27,7 @@
         </div>
 
         <div class="executive-summary" itemprop="description">
-          <p>This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but K.I.S.S.</p>
+          <p>현재 사이버특기 의경으로 경찰청에서 근무 중인 이찬형입니다. 개발자는 언제나 멋진 팀 안에서 극적으로 성장 할 수 있다고 믿고 있습니다.올해 11월 25일 전역 예정이고 4학년 복학하기 전 저와 함께 극적으로 성장할 스타트업은 언제든 연락주세요 :)</p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -49,36 +49,52 @@
 
         <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details" itemprop="description">Safety Inspector &bull; Nov, 1980 &mdash; Present</h4>
-          <p class="resume-item-copy">Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points:</p>
+          <h3 class="resume-item-title" itemprop="name">경찰청 사이버안전국 모바일포렌식팀</h3>
+          <h4 class="resume-item-details" itemprop="description">Android developer &bull; 2016. 08 &mdash; Present</h4>
+          <!--<p class="resume-item-copy">Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points:</p>-->
           <ul class="resume-item-list">
-            <li>Ate lots of donuts</li>
-            <li>Fell asleep rarely</li>
-            <li>Left promptly at end of day (sometimes earlier)</li>
+            <li>주로 일선 형사/수사관이 수사에 도움이 될만한 어플리케이션을 기획 및 개발함</li>
+            <li>해외 포렌식 뉴스, 논문을 번역하여 팀내 공유</li>
+            <li>그외 팀 내 시스템/툴 유지보수 (JSP, MyBatis, Sencha, C#)</li>
+            <li>앱 개발 및 배포로 국장님 표창도 받음 :)</li>
           </ul>
-          <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p>
-
         </div><!-- end of resume-item -->
 
         <!-- another resume item -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Sir Putt-A-Lot's Merrie Olde Fun Centre</h3>
-          <h4 class="resume-item-details" itemprop="description">Windmill Crank Operator &bull; Jun, 1978 &mdash; Sept, 1979</h4>
-          <p class="resume-item-copy">If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.</p>
-
-        </div><!-- end of resume-item -->
-
-        <!-- by now you're getting the picture... -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Simpson Lazer Tag</h3>
-          <h4 class="resume-item-details" itemprop="description">Front Desk Attendant &bull; Jun, 1975 &mdash; May, 1978</h4>
-          <p class="resume-item-copy">Boy, when Marge first told me she was going to the Police Academy, I thought it would be fun and exciting, you know, like the movie... Spaceballs. But instead, it's been painful and disturbing, like the movie Police Academy.</p>
+          <h3 class="resume-item-title" itemprop="name">엠엔파트너</h3>
+          <h4 class="resume-item-details" itemprop="description">Web developer &bull; 2014.03 &mdash; 2015. 02</h4>
+          <ul class="resume-item-list">
+            <li>원어데이 소셜커머스 스타트업으로 태국 20/30대 여성을 타겟으로 한국 화장품 판매</li>
+            <li>주로 한국어로 된 소셜커머스 시스템을 태국어로 포팅하는 작업을 함 (PHP)</li>
+          </ul>
 
         </div><!-- end of resume-item -->
 
       </section>
       <!-- end Experience -->
+      {% endif %}
+
+      {% if site.resume_section_recognition %}
+      <!-- begin Recognition -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Recognition</h2>
+        </header>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title" itemprop="award">마이다스아이티 챌린지 2016</h3>
+          <h4 class="resume-item-details">최우수상 &bull; 2016. 05. 29</h4>
+          <ul class="resume-item-list">
+            <li>1박 2일간 마이다스아이티에서 제출하는 문제를 1박 2일간 구현하는 챌린지</li>
+            <li>3인 1팀으로 본인은 프론트를 맡아 구현함 (HTML, CSS, Javasciprt, JQuery)</li>
+            <li>군휴가 중 참가했고 좋은 결과로 군인임에도 임원 면접까지 제의받음</li>
+          </ul>
+        </div>
+
+      </section>
+      <!-- end Recognition -->
       {% endif %}
 
       {% if site.resume_section_education %}
@@ -90,9 +106,33 @@
         </header>
 
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Springfield College</h3>
-          <h4 class="resume-item-details" itemprop="description">Associates Degree, Business Management &bull; 1984 &mdash; 1986</h4>
-          <p class="resume-item-copy">If you had any meaningful roles at college, feel free to write about them here.</p>
+          <h3 class="resume-item-title" itemprop="name">광운대학교</h3>
+          <h4 class="resume-item-details" itemprop="description">컴퓨터소프트웨어학과 &bull; 2011 &mdash; 휴학</h4>
+          <ul class="resume-item-list">
+            <li>평점 4.28/4.5</li>
+            <li>프로그래밍 주요 수업 A+ (알고리즘, 자료구조, 운영체제, 컴퓨터네트워크, C++, Java 등)</li>
+          </ul>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">박컴학원</h3>
+          <h4 class="resume-item-details" itemprop="description">소프트웨어 엔지니어 연수과정 수료 &bull; 2012. 07. &mdash; 2012. 12. </h4>
+          <ul class="resume-item-list">
+            <li>프로그래밍을 진지하게 기본부터 닦는 과정 (NS 차트 - 링크, 손코딩) (광고 x)</li>
+            <li>아침 9시 ~ 밤 10시 하드트레이닝으로 개발의 초석을 닦은 학원</li>
+            <li>1단계 시작은 창대하게 20 ~ 30명에서 시작했으나 마지막 3명 남은 고난이도 수업 이겨냄</li>
+            <li>당시 Array, Tree 라이브러리를 C/C++로 직접 라이브러리로 작성하고 마지막 프로젝트 (MFC 기반)에 사용함</li>
+          </ul>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">한국정보보호학원</h3>
+          <h4 class="resume-item-details" itemprop="description">정보보호전문가과정 40기 수료 &bull; 2012. 02. &mdash; 2012. 06. </h4>
+          <ul class="resume-item-list">
+            <li>운영체제 보안, 네트워크 보안, 디지털 포렌식 등 보안전문가를 키우는 과정</li>
+            <li>주로 취약점 환경을 구축하고 실습하는 작업이 많아, 리눅스 활용과 네트워크(내부망, 외부망) 학습에 많은 도움이 됨</li>
+            <li>당시 보안이 나의 길인지 확인하고자 대학교를 휴학하고 수강</li>
+          </ul>
         </div>
 
       </section>
@@ -108,15 +148,48 @@
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://donutlocator.io">donutfinder.io</a></h3>
-          <h4 class="resume-item-details">Founder & Primary Developer &bull; 2012 &mdash; Present</h4>
-          <p class="resume-item-copy">Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.</p>
+          <h3 class="resume-item-title"><a href="http://donutlocator.io">Todo Web</a></h3>
+          <h4 class="resume-item-details">2016. 10. &mdash; Present</h4>
+          <ul class="resume-item-list">
+            <li>마이다스아이티 챌린지에서 구현한 Todo 웹 프로그램을 재구현한 프로젝트</li>
+            <li>당시 챌린지 끝난 뒤 서버 학습겸 다시 구현한 프로그램</li>
+            <li>HTML, CSS, Javasciprt, JQuery, Spring, Hibernate 사용</li>
+          </ul>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Donut Eater's User Group</h3>
-          <h4 class="resume-item-details">Co-Founder & Organizer &bull; 2007 &mdash; Present</h4>
-          <p class="resume-item-copy">DEUG is a local monthly meetup in Springfield where we share all the latest tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.</p>
+          <h3 class="resume-item-title"><a href="https://github.com/babjo/py-deep-learning">C++로 배우는 딥러닝 (Python 버전)</a></h3>
+          <h4 class="resume-item-details">2016. 10. &mdash; Present</h4>
+          <ul class="resume-item-list">
+            <li>동국대 홍정모 교수의 C++로 배우는 딥러닝 수업 내용을 파이썬으로 구현한 프로젝트</li>
+            <li>언제나 기술에는 관심이 많고 개발자라면(?) 동적언어도 쓸 수 있어야하기에 교수님 수업 들으면서 구현 중</li>
+            <li>동국대 홍정모 교수님 좋은 강의 감사합니다. :)</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="https://github.com/babjo/10-thousand-hours-theory-app">만시간의 법칙</a></h3>
+          <h4 class="resume-item-details">2016. 09 &mdash; 2016. 10</h4>
+          <ul class="resume-item-list">
+            <li>만 시간동안 꾸준한 노력을 통해 전문가가 될 수 있도록 도와주는 앱</li>
+            <li>Clean Architecture, Rxjava, Android Annotation, Requery(Android ORM), Firebase 사용</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="https://github.com/babjo/PublicBookSearcher">서시</a></h3>
+          <h4 class="resume-item-details">서울시 시립도서관 통합 검색 앱 &bull; 2015. 09. &mdash; 2015. 10.</h4>
+          <ul class="resume-item-list">
+            <li><a href="https://mplatform.seoul.go.kr/w/contest/award/nominee/selectPageList2015Nominee.do">2015 서울시 앱 공모전 위해 한달 간 만든 앱으로 결과는 예선 당선</a></li>
+            <li>웹 크롤링 만렙을 찍은 느낌 (자동완성 기능, 검색 기능 모두 웹 크롤링하여 추출)</li>
+            <li>Clean Architecture, Rxjava, Android Annotation, Requery(Android ORM), Firebase 사용</li>
+            <li>https://play.google.com/store/apps/details?id=com.seoul.publicbooksearcher 많은 다운로드 부탁드려요 :)</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+        <h4 class="resume-item-details">※ 위 프로젝트 모두, 군복무 중 휴가 또는 외박을 때 시간을 내 구현한 점이 포인트
+</h4>
         </div>
 
       </section>
@@ -132,52 +205,22 @@
         </header>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Donut design</h4>
-          <p class="resume-item-copy">Sprinkle art, icing design, eclair management, taste testing, donut/coffee pairing research</p>
+          <h4 class="resume-item-details">Languages</h4>
+          <p class="resume-item-copy">Java, Javasciprt, Python, HTML, CSS, PHP</p>
         </div>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Craft beer brewing</h4>
-          <p class="resume-item-copy">Hops inspection, brew testing, distribution management, bottle label design, festival and event management</p>
+          <h4 class="resume-item-details">Frameworks</h4>
+          <p class="resume-item-copy">Android, Spring Framework, Express</p>
         </div>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Family leadership</h4>
-          <p class="resume-item-copy">Bread winning, conflict resolution, couch inspection, TV longevity testing</p>
+          <h4 class="resume-item-details">IDE</h4>
+          <p class="resume-item-copy">Android Studio, WebStorm, intellij</p>
         </div>
 
       </section>
       <!-- end Skills -->
-      {% endif %}
-
-      {% if site.resume_section_recognition %}
-      <!-- begin Recognition -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Recognition</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details">Outstanding Achievement &bull; 2010</h4>
-          <p class="resume-item-copy">Awarded for stopping a nuclear meltdown, even though I also started it.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Duff Beer Customer of the year</h3>
-          <h4 class="resume-item-details">1997 &mdash; 2001, 2003, 2008 &mdash; 2012</h4>
-          <p class="resume-item-copy">Honored by <a href="https://en.wikipedia.org/wiki/Duff_Beer">Duff Beer</a> for being an outstanding customer several years straight. Qualifications included most beer consumed at a bar, most beer purchased, and most beer ralphed.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Moe's Patron of the Month</h3>
-          <h4 class="resume-item-details">12/2001, 8/2004</h4>
-          <p class="resume-item-copy">Specifically this prestigious awarded twice for stopping a robber with my belly.</p>
-        </div>
-
-      </section>
-      <!-- end Recognition -->
       {% endif %}
 
       {% if site.resume_section_associations %}
