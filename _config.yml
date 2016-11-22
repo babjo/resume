@@ -1,6 +1,6 @@
 # Site settings
-title: "Chanhyeong Lee : Resume"
-description: "A resume for Chanhyeong Lee"
+title: "Chanhyeong LEE : Resume"
+description: "A resume for Chanhyeong LEE"
 
 # Build settings
 markdown: kramdown
@@ -10,8 +10,8 @@ sass:
 
 # Resume settings
 resume_avatar:                  "true"
-resume_name:                    "Chanhyeong Lee"
-resume_title:                   "Developer"
+resume_name:                    "Chanhyeong LEE"
+resume_title:                   "SW ENGINEER"
 resume_contact_email:
   "kd980311@naver.com"
 
@@ -19,7 +19,7 @@ resume_contact_email:
 # "no" to display an "I'm not looking for work" message,
 # or remove the resume_looking_for_work option entirely
 # to leave blank
-resume_looking_for_work:        "yes"
+resume_looking_for_work:        "no"
 
 # Decide which sections to use
 # comment out to hide
